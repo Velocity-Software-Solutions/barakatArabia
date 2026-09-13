@@ -1,0 +1,609 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="template-version" content="1.0.8">
+<title>Barakat Arabia | General Contracting &amp; Construction Solutions</title>
+<meta name="description" content="Barakat Arabia provides coordinated general contracting, construction, MEP, and infrastructure solutions for projects across Saudi Arabia.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Place favicon.ico in the root directory -->
+<link rel="icon" type="image/png" href="assets/images/barakat/branding/barakat-mark.png">
+<!-- CSS here -->
+<link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/vendor/animate.min.css">
+<link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+<link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+<link rel="stylesheet" href="assets/css/plugins/nouislider.min.css">
+<link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
+<link rel="stylesheet" href="assets/css/vendor/odometer.min.css">
+<link rel="stylesheet" href="assets/css/vendor/fontawesome-pro.css">
+<link rel="stylesheet" href="assets/css/vendor/spacing.css">
+<link rel="stylesheet" href="assets/css/vendor/remixicon.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<style>
+.rs-header-logo a,.offcanvas-logo a{display:inline-flex;align-items:center}
+.rs-header-logo img{display:block;width:auto;height:54px;max-width:44vw;object-fit:contain}
+.offcanvas-logo img{display:block;width:auto;height:64px;max-width:62vw;object-fit:contain}
+.barakat-hero{background-position:center;background-size:cover}
+.barakat-hero:after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.34)}
+.rs-banner-content{position:relative;z-index:2}
+.barakat-info-block{height:100%;padding:24px;border-left:3px solid #d71920;background:#f7f7f7}
+.rs-about-thumb img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.barakat-service-card{height:100%;min-height:280px}
+.barakat-service-number{display:block;color:#d71920;font-size:42px;font-weight:700;margin-bottom:24px}
+.barakat-project-card .rs-portfolio-thumb img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.barakat-project-meta{color:#fff;margin:10px 0 0}
+.barakat-gallery-item{display:block;overflow:hidden}
+.barakat-gallery-item img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .35s ease}
+.barakat-gallery-item:hover img{transform:scale(1.04)}
+.barakat-quality-item{height:100%;min-height:190px;padding:25px;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.barakat-quality-item img{width:100%;height:115px;object-fit:contain;margin-bottom:15px}
+.barakat-quality-item h5{margin:0}
+.barakat-contact-list{margin-top:30px}
+.barakat-contact-list a{color:inherit}
+.barakat-footer-logo{display:block;width:min(280px,100%);height:auto;background:#fff;padding:8px 12px;border-radius:4px}
+.rs-section-subtitle.has-theme-red:not(.has-white):before{content:"";display:inline-block;flex:0 0 17px;width:17px;height:18px;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 18'%3E%3Cpath d='M0 1l5 8-5 8V1zm5.5 0l5 8-5 8V1zM11 1l5 8-5 8V1z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 18'%3E%3Cpath d='M0 1l5 8-5 8V1zm5.5 0l5 8-5 8V1zM11 1l5 8-5 8V1z'/%3E%3C/svg%3E") center/contain no-repeat}
+.barakat-about-bg{position:relative;overflow:hidden;background:#fff}
+.barakat-about-bg:before{content:"";position:absolute;inset:0;background:url('assets/images/barakat/backgrounds/sectors-blueprint-transparent.png') center/cover no-repeat;opacity:.2;pointer-events:none}
+.barakat-about-bg>.container{position:relative;z-index:1}
+.barakat-about-bg .barakat-info-block{background:rgba(247,247,247,.94);box-shadow:0 10px 28px rgba(17,17,17,.04)}
+.barakat-blueprint-bg{background-image:linear-gradient(to right,#f7f7f7 0%,#f7f7f7 28%,rgba(247,247,247,.94) 42%,rgba(247,247,247,.55) 56%,rgba(247,247,247,0) 72%),url('assets/images/barakat/backgrounds/sectors-blueprint-transparent.png')!important;background-size:100% 100%,min(68%,1100px) auto!important;background-position:center,right bottom!important;background-repeat:no-repeat!important;opacity:.72}
+.barakat-portfolio-bg{background-image:url('assets/images/barakat/backgrounds/services-mep-dark.png');background-position:center;background-size:cover;background-repeat:no-repeat;position:relative}
+.barakat-portfolio-bg:before{content:"";position:absolute;inset:0;background:rgba(10,10,10,.84)}
+.barakat-portfolio-bg>.container{position:relative;z-index:1}
+.barakat-portfolio-bg .rs-section-title{color:#fff!important;text-shadow:0 2px 18px rgba(0,0,0,.45)}
+.barakat-portfolio-bg .rs-section-subtitle{font-weight:700;text-shadow:0 1px 10px rgba(0,0,0,.55)}
+.barakat-sectors-bg{background:#f7f7f7 url('assets/images/barakat/backgrounds/sectors-blueprint-transparent.png') center bottom/cover no-repeat}
+.barakat-sectors-bg .barakat-info-block{background:rgba(255,255,255,.92);border-top:1px solid rgba(215,25,32,.18);box-shadow:0 12px 32px rgba(17,17,17,.06)}
+.barakat-sponsors{overflow:hidden;background:#0d0d0d;position:relative}
+.barakat-sponsors:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 18% 0%,rgba(215,25,32,.16),transparent 58%);pointer-events:none}
+.barakat-sponsors>*{position:relative;z-index:1}
+.barakat-sponsors .rs-section-title{color:#fff}
+.barakat-sponsors .rs-section-subtitle{color:#ff3b3b;font-weight:700;letter-spacing:.06em}
+.barakat-sponsors-lead{color:rgba(255,255,255,.68);max-width:640px;margin:16px 0 0}
+.barakat-sponsors-viewport{position:relative;padding:0;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 7%,#000 93%,transparent 100%);mask-image:linear-gradient(to right,transparent 0,#000 7%,#000 93%,transparent 100%)}
+.barakat-marquee-row{display:flex;overflow:hidden;width:100%}
+.barakat-marquee-row+.barakat-marquee-row{margin-top:20px}
+.barakat-marquee-track{display:flex;flex:0 0 auto;gap:20px;padding-right:20px;animation:barakat-marquee 46s linear infinite;will-change:transform}
+.barakat-marquee-row.is-reverse .barakat-marquee-track{animation-name:barakat-marquee-reverse;animation-duration:54s}
+.barakat-sponsors-viewport:hover .barakat-marquee-track,.barakat-sponsors-viewport:focus-within .barakat-marquee-track{animation-play-state:paused}
+@keyframes barakat-marquee{from{transform:translate3d(0,0,0)}to{transform:translate3d(-100%,0,0)}}
+@keyframes barakat-marquee-reverse{from{transform:translate3d(-100%,0,0)}to{transform:translate3d(0,0,0)}}
+.barakat-sponsor-logo{flex:0 0 auto;width:212px;height:118px;padding:20px 22px;background:#fff;border-radius:6px;box-shadow:0 10px 26px rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;transition:transform .3s ease,box-shadow .3s ease}
+.barakat-sponsor-logo:hover{transform:translateY(-6px);box-shadow:0 16px 34px rgba(215,25,32,.3)}
+.barakat-sponsor-logo.is-light-logo{background:#1d2028;border:1px solid rgba(255,255,255,.22);box-shadow:0 10px 26px rgba(0,0,0,.5)}
+.barakat-sponsor-logo.is-light-logo:hover{box-shadow:0 16px 34px rgba(215,25,32,.34)}
+.barakat-sponsor-logo img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+@media(max-width:991px){.barakat-sponsor-logo{width:184px;height:106px;padding:16px 18px}.barakat-marquee-track{gap:16px;padding-right:16px}.barakat-marquee-row+.barakat-marquee-row{margin-top:16px}}
+@media(max-width:575px){.barakat-sponsor-logo{width:150px;height:92px;padding:14px}.barakat-marquee-track{gap:14px;padding-right:14px;animation-duration:34s}.barakat-marquee-row.is-reverse .barakat-marquee-track{animation-duration:38s}}
+@media(prefers-reduced-motion:reduce){.barakat-marquee-track{animation:none}.barakat-marquee-row{overflow-x:auto;scrollbar-width:none}.barakat-marquee-row::-webkit-scrollbar{display:none}}
+.barakat-info-block h4,.barakat-quality-item h5,.rs-footer-widget-title{word-break:normal;overflow-wrap:break-word;hyphens:none;line-height:1.25}
+.barakat-info-block h4{margin-bottom:10px}
+.barakat-info-block p{margin-bottom:0;line-height:1.6}
+.rs-footer-widget-links ul{grid-template-columns:1fr;gap:12px}
+.rs-footer-widget-links ul li a{word-break:normal;overflow-wrap:break-word}
+.rs-footer-widget{overflow-wrap:break-word}
+@media(max-width:575px){.rs-banner-title{font-size:clamp(42px,12vw,64px)}}
+</style>
+<link rel="stylesheet" href="assets/css/company-profile.css">
+</head>
+
+<body class="rs-smoother-yes">
+
+    <!-- preloader start -->
+    <div id="pre-load">
+        <div id="loader" class="loader">
+            <div class="loader-container has-theme-red">
+                <div class="loader-icon"><img src="assets/images/barakat/branding/barakat-mark.png" alt="Barakat Arabia"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- cursor start -->
+    <div id="rs-mouse">
+        <div id="cursor-ball"></div>
+    </div>
+    <!-- cursor end -->
+
+    <!-- Header area start -->
+    <header>
+        <div class="rs-header-area rs-header-two header-transparent has-theme-red has-border rs-sticky-header"
+            id="rs-sticky-header">
+            <div class="container-fluid">
+                <div class="rs-header-inner">
+                    <div class="rs-header-left">
+                        <div class="rs-header-logo">
+                            <a href="#home"><img src="assets/images/barakat/branding/barakat-logo-light.png" alt="Barakat Arabia"></a>
+                        </div>
+                    </div>
+                    <div class="rs-header-menu">
+                        <nav id="mobile-menu" class="main-menu">
+                            <ul class="onepage-menu">
+                                <li> <a href="#home">Home</a></li>
+                                <li><a href="#homeabout">About</a></li>
+                                <li> <a href="#homeservices">Services</a></li>
+                                <li> <a href="#homeportfolio">Projects</a> </li>
+                                <li><a href="#homegallery">Gallery</a> </li>
+                                <li><a href="#homecontact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="rs-header-right">
+                        <!-- call start -->
+                        <div class="rs-header-call">
+                            <h6><a href="#homecontact">Discuss a Project</a></h6>
+                        </div>
+                        <!-- call end -->
+
+                        <!-- search start -->
+                        <div class="rs-header-search-wrapper">
+                            <div class="rs-header-search-icon has-theme-red">
+                                <i class="ri-close-fill has-close"></i>
+                                <i class="ri-search-line has-search"></i>
+                            </div>
+                            <form class="rs-header-search-inner rs-stickys-form" action="#"
+                                method="POST">
+                                <div class="rs-header-search">
+                                    <input type="text" aria-label="Searching..." placeholder="Searching...">
+                                    <button type="submit"><i class="ri-search-line"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- search end -->
+
+                        <!-- sidebar start -->
+                        <div class="rs-header-hamburger has-theme-red">
+                            <div class="sidebar-toggle">
+                                <a class="bar-icon" href="javascript:void(0)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                        fill="none">
+                                        <path
+                                            d="M8.55566 11H1.55566C1.29045 11 1.03609 11.1054 0.848557 11.2929C0.661021 11.4804 0.555664 11.7348 0.555664 12V19C0.555664 19.2652 0.661021 19.5196 0.848557 19.7071C1.03609 19.8946 1.29045 20 1.55566 20H8.55566C8.82088 20 9.07523 19.8946 9.26277 19.7071C9.45031 19.5196 9.55566 19.2652 9.55566 19V12C9.55566 11.7348 9.45031 11.4804 9.26277 11.2929C9.07523 11.1054 8.82088 11 8.55566 11ZM7.55566 18H2.55566V13H7.55566V18ZM19.5557 0H12.5557C12.2904 0 12.0361 0.105357 11.8486 0.292893C11.661 0.48043 11.5557 0.734784 11.5557 1V8C11.5557 8.26522 11.661 8.51957 11.8486 8.70711C12.0361 8.89464 12.2904 9 12.5557 9H19.5557C19.8209 9 20.0752 8.89464 20.2628 8.70711C20.4503 8.51957 20.5557 8.26522 20.5557 8V1C20.5557 0.734784 20.4503 0.48043 20.2628 0.292893C20.0752 0.105357 19.8209 0 19.5557 0ZM18.5557 7H13.5557V2H18.5557V7ZM19.5557 11H12.5557C12.2904 11 12.0361 11.1054 11.8486 11.2929C11.661 11.4804 11.5557 11.7348 11.5557 12V19C11.5557 19.2652 11.661 19.5196 11.8486 19.7071C12.0361 19.8946 12.2904 20 12.5557 20H19.5557C19.8209 20 20.0752 19.8946 20.2628 19.7071C20.4503 19.5196 20.5557 19.2652 20.5557 19V12C20.5557 11.7348 20.4503 11.4804 20.2628 11.2929C20.0752 11.1054 19.8209 11 19.5557 11ZM18.5557 18H13.5557V13H18.5557V18ZM8.55566 0H1.55566C1.29045 0 1.03609 0.105357 0.848557 0.292893C0.661021 0.48043 0.555664 0.734784 0.555664 1V8C0.555664 8.26522 0.661021 8.51957 0.848557 8.70711C1.03609 8.89464 1.29045 9 1.55566 9H8.55566C8.82088 9 9.07523 8.89464 9.26277 8.70711C9.45031 8.51957 9.55566 8.26522 9.55566 8V1C9.55566 0.734784 9.45031 0.48043 9.26277 0.292893C9.07523 0.105357 8.82088 0 8.55566 0ZM7.55566 7H2.55566V2H7.55566V7Z"
+                                            fill="#616161"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- sidebar end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rs-header-area rs-header-two header-transparent has-theme-red has-border">
+            <div class="container-fluid">
+                <div class="rs-header-inner">
+                    <div class="rs-header-left">
+                        <div class="rs-header-logo">
+                            <a href="#home"><img src="assets/images/barakat/branding/barakat-logo-light.png" alt="Barakat Arabia"></a>
+                        </div>
+                    </div>
+                    <div class="rs-header-menu">
+                        <nav id="mobile-menu-two" class="main-menu">
+                            <ul class="onepage-menu">
+                                <li> <a href="#home">Home</a></li>
+                                <li><a href="#homeabout">About</a></li>
+                                <li> <a href="#homeservices">Services</a></li>
+                                <li> <a href="#homeportfolio">Projects</a> </li>
+                                <li><a href="#homegallery">Gallery</a> </li>
+                                <li><a href="#homecontact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="rs-header-right">
+                        <!-- call start -->
+                        <div class="rs-header-call">
+                            <h6><a href="#homecontact">Discuss a Project</a></h6>
+                        </div>
+                        <!-- call end -->
+
+                        <!-- search start -->
+                        <div class="rs-header-search-wrapper">
+                            <div class="rs-header-search-icon has-theme-red">
+                                <i class="ri-close-fill has-close"></i>
+                                <i class="ri-search-line has-search"></i>
+                            </div>
+                            <form class="rs-header-search-inner rs-stickys-form" action="#"
+                                method="POST">
+                                <div class="rs-header-search">
+                                    <input type="text" aria-label="Searching..." placeholder="Searching...">
+                                    <button type="submit"><i class="ri-search-line"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- search end -->
+
+                        <!-- sidebar start -->
+                        <div class="rs-header-hamburger has-theme-red">
+                            <div class="sidebar-toggle">
+                                <a class="bar-icon" href="javascript:void(0)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                        fill="none">
+                                        <path
+                                            d="M8.55566 11H1.55566C1.29045 11 1.03609 11.1054 0.848557 11.2929C0.661021 11.4804 0.555664 11.7348 0.555664 12V19C0.555664 19.2652 0.661021 19.5196 0.848557 19.7071C1.03609 19.8946 1.29045 20 1.55566 20H8.55566C8.82088 20 9.07523 19.8946 9.26277 19.7071C9.45031 19.5196 9.55566 19.2652 9.55566 19V12C9.55566 11.7348 9.45031 11.4804 9.26277 11.2929C9.07523 11.1054 8.82088 11 8.55566 11ZM7.55566 18H2.55566V13H7.55566V18ZM19.5557 0H12.5557C12.2904 0 12.0361 0.105357 11.8486 0.292893C11.661 0.48043 11.5557 0.734784 11.5557 1V8C11.5557 8.26522 11.661 8.51957 11.8486 8.70711C12.0361 8.89464 12.2904 9 12.5557 9H19.5557C19.8209 9 20.0752 8.89464 20.2628 8.70711C20.4503 8.51957 20.5557 8.26522 20.5557 8V1C20.5557 0.734784 20.4503 0.48043 20.2628 0.292893C20.0752 0.105357 19.8209 0 19.5557 0ZM18.5557 7H13.5557V2H18.5557V7ZM19.5557 11H12.5557C12.2904 11 12.0361 11.1054 11.8486 11.2929C11.661 11.4804 11.5557 11.7348 11.5557 12V19C11.5557 19.2652 11.661 19.5196 11.8486 19.7071C12.0361 19.8946 12.2904 20 12.5557 20H19.5557C19.8209 20 20.0752 19.8946 20.2628 19.7071C20.4503 19.5196 20.5557 19.2652 20.5557 19V12C20.5557 11.7348 20.4503 11.4804 20.2628 11.2929C20.0752 11.1054 19.8209 11 19.5557 11ZM18.5557 18H13.5557V13H18.5557V18ZM8.55566 0H1.55566C1.29045 0 1.03609 0.105357 0.848557 0.292893C0.661021 0.48043 0.555664 0.734784 0.555664 1V8C0.555664 8.26522 0.661021 8.51957 0.848557 8.70711C1.03609 8.89464 1.29045 9 1.55566 9H8.55566C8.82088 9 9.07523 8.89464 9.26277 8.70711C9.45031 8.51957 9.55566 8.26522 9.55566 8V1C9.55566 0.734784 9.45031 0.48043 9.26277 0.292893C9.07523 0.105357 8.82088 0 8.55566 0ZM7.55566 7H2.55566V2H7.55566V7Z"
+                                            fill="#616161"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- sidebar end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header area end -->
+
+    <!-- Offcanvas area start -->
+    <div class="fix">
+        <div class="offcanvas-area has-theme-red" data-lenis-prevent>
+            <div class="offcanvas-wrapper">
+                <div class="offcanvas-content">
+                    <div class="offcanvas-top d-flex justify-content-between align-items-center mb-25">
+                        <div class="offcanvas-logo">
+                            <a href="#home"><img src="assets/images/barakat/branding/barakat-logo-light.png" alt="Barakat Arabia"></a>
+                        </div>
+                        <div class="offcanvas-close">
+                            <button class="offcanvas-close-icon animation--flip">
+                                <span class="offcanvas-m-lines">
+                                    <span class="offcanvas-m-line line--1"></span><span
+                                        class="offcanvas-m-line line--2"></span><span
+                                        class="offcanvas-m-line line--3"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="offcanvas-about mb-30 d-none d-sm-block"><p>Barakat Arabia brings construction discipline and coordinated engineering together for dependable project delivery.</p></div><div class="offcanvas-gallery d-none d-sm-block">
+                        <div class="offcanvas-gallery-thumb-wrapper">
+                            <div class="offcanvas-popup-thumb">
+                                <a class="popup-image" href="assets/images/barakat/gallery/gallery-01.png">
+                                    <img src="assets/images/barakat/gallery/gallery-01.png" alt="image">
+                                </a>
+                            </div>
+                            <div class="offcanvas-popup-thumb">
+                                <a class="popup-image" href="assets/images/barakat/gallery/gallery-02.png">
+                                    <img src="assets/images/barakat/gallery/gallery-02.png" alt="image">
+                                </a>
+                            </div>
+                            <div class="offcanvas-popup-thumb">
+                                <a class="popup-image" href="assets/images/barakat/gallery/gallery-03.png">
+                                    <img src="assets/images/barakat/gallery/gallery-03.png" alt="image">
+                                </a>
+                            </div>
+                            <div class="offcanvas-popup-thumb">
+                                <a class="popup-image" href="assets/images/barakat/gallery/gallery-04.jpg">
+                                    <img src="assets/images/barakat/gallery/gallery-04.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="offcanvas-popup-thumb">
+                                <a class="popup-image" href="assets/images/barakat/gallery/gallery-05.png">
+                                    <img src="assets/images/barakat/gallery/gallery-05.png" alt="image">
+                                </a>
+                            </div>
+                            <div class="offcanvas-popup-thumb">
+                                <a class="popup-image" href="assets/images/barakat/gallery/gallery-01.png">
+                                    <img src="assets/images/barakat/gallery/gallery-01.png" alt="image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-menu">
+                        <div class="rs-offcanvas-menu mb-25">
+                            <nav></nav>
+                        </div>
+                    </div>
+                    <div class="offcanvas-contact mb-30">
+                        <h4 class="offcanvas-title-meta">Project Enquiries</h4>
+                        <ul>
+                            <li class="d-flex align-items-center gap-15">
+                                <div class="offcanvas-contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18" viewBox="0 0 14 18"
+                                        fill="none">
+                                        <path
+                                            d="M11.8768 9.68475C11.3059 10.835 10.5331 11.9818 9.74128 13.0109C8.95198 14.0368 8.15999 14.9249 7.5643 15.5572C7.48514 15.6412 7.40956 15.7206 7.33802 15.7951C7.26648 15.7206 7.1909 15.6412 7.11174 15.5572C6.51605 14.9249 5.72406 14.0368 4.93476 13.0109C4.14299 11.9818 3.37019 10.835 2.79925 9.68475C2.22242 8.52266 1.89032 7.43373 1.89032 6.5C1.89032 3.50846 4.32934 1.08333 7.33802 1.08333C10.3467 1.08333 12.7857 3.50846 12.7857 6.5C12.7857 7.43373 12.4536 8.52266 11.8768 9.68475ZM7.33802 17.3333C7.33802 17.3333 13.8753 11.1732 13.8753 6.5C13.8753 2.91015 10.9484 0 7.33802 0C3.7276 0 0.800781 2.91015 0.800781 6.5C0.800781 11.1732 7.33802 17.3333 7.33802 17.3333Z"
+                                            fill="#6D6D6D"></path>
+                                        <path
+                                            d="M7.33802 8.66667C6.13455 8.66667 5.15894 7.69662 5.15894 6.5C5.15894 5.30338 6.13455 4.33333 7.33802 4.33333C8.54149 4.33333 9.5171 5.30338 9.5171 6.5C9.5171 7.69662 8.54149 8.66667 7.33802 8.66667ZM7.33802 9.75C9.14323 9.75 10.6066 8.29492 10.6066 6.5C10.6066 4.70507 9.14323 3.25 7.33802 3.25C5.53281 3.25 4.0694 4.70507 4.0694 6.5C4.0694 8.29492 5.53281 9.75 7.33802 9.75Z"
+                                            fill="#6D6D6D"></path>
+                                    </svg>
+                                </div>
+                                <div class="offcanvas-contact-text">
+                                    <a href="#homecontact">Saudi Arabia<br>General Contracting &amp; Construction</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center gap-15">
+                                <div class="offcanvas-contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                        fill="none">
+                                        <path
+                                            d="M3.65387 1.32849C3.40343 1.00649 2.92745 0.976861 2.639 1.26531L1.60508 2.29923C1.1216 2.78271 0.94387 3.46766 1.1551 4.06847C2.00338 6.48124 3.39215 8.74671 5.32272 10.6773C7.25329 12.6078 9.51876 13.9966 11.9315 14.8449C12.5323 15.0561 13.2173 14.8784 13.7008 14.3949L14.7347 13.361C15.0231 13.0726 14.9935 12.5966 14.6715 12.3461L12.3653 10.5524C12.2008 10.4245 11.9866 10.3793 11.7845 10.4298L9.59541 10.9771C9.00082 11.1257 8.37183 10.9515 7.93845 10.5181L5.48187 8.06155C5.04849 7.62817 4.87427 6.99919 5.02292 6.40459L5.57019 4.21553C5.62073 4.01336 5.57552 3.79918 5.44758 3.63468L3.65387 1.32849ZM1.88477 0.511076C2.62689 -0.231039 3.8515 -0.154797 4.49583 0.673634L6.28954 2.97983C6.6187 3.40304 6.73502 3.95409 6.60498 4.47423L6.05772 6.66329C5.99994 6.8944 6.06766 7.13888 6.2361 7.30732L8.69268 9.7639C8.86113 9.93235 9.1056 10.0001 9.33671 9.94229L11.5258 9.39502C12.0459 9.26499 12.597 9.3813 13.0202 9.71047L15.3264 11.5042C16.1548 12.1485 16.231 13.3731 15.4889 14.1152L14.455 15.1492C13.7153 15.8889 12.6089 16.2137 11.5778 15.8512C9.01754 14.9511 6.61438 13.4774 4.56849 11.4315C2.5226 9.38562 1.04895 6.98246 0.148838 4.42225C-0.213682 3.39112 0.11113 2.28472 0.85085 1.545L1.88477 0.511076Z"
+                                            fill="#6D6D6D"></path>
+                                        <path
+                                            d="M11 0.5C11 0.223858 11.2239 0 11.5 0H15.5C15.7761 0 16 0.223858 16 0.5V4.5C16 4.77614 15.7761 5 15.5 5C15.2239 5 15 4.77614 15 4.5V1.70711L10.8536 5.85355C10.6583 6.04882 10.3417 6.04882 10.1464 5.85355C9.95118 5.65829 9.95118 5.34171 10.1464 5.14645L14.2929 1H11.5C11.2239 1 11 0.776142 11 0.5Z"
+                                            fill="#6D6D6D"></path>
+                                    </svg>
+                                </div>
+                                <div class="offcanvas-contact-text">
+                                    <a href="#homecontact">Start a conversation</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center gap-15">
+                                <div class="offcanvas-contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                        fill="none">
+                                        <path
+                                            d="M2 2C0.895431 2 0 2.89543 0 4V12L2.58386e-05 12.0103C0.00555998 13.1101 0.898859 14 2 14H7.5C7.77614 14 8 13.7761 8 13.5C8 13.2239 7.77614 13 7.5 13H2C1.53715 13 1.14774 12.6855 1.03376 12.2586L6.67417 8.7876L8 9.5831L15 5.3831V8.5C15 8.77614 15.2239 9 15.5 9C15.7761 9 16 8.77614 16 8.5V4C16 2.89543 15.1046 2 14 2H2ZM5.70808 8.20794L1 11.1052V5.3831L5.70808 8.20794ZM1 4.2169V4C1 3.44772 1.44772 3 2 3H14C14.5523 3 15 3.44772 15 4V4.2169L8 8.4169L1 4.2169Z"
+                                            fill="#6D6D6D"></path>
+                                        <path
+                                            d="M14.2467 14.2686C15.2567 14.2686 15.8339 13.4116 15.8339 12.2442V12.0344C15.8339 10.4297 14.6402 9 12.5197 9H12.4847C10.421 9 9 10.3598 9 12.4322V12.6465C9 14.8195 10.4385 16 12.3579 16H12.4016C12.9963 16 13.4204 15.9257 13.639 15.8251V15.0949C13.3941 15.2042 12.9656 15.2742 12.4585 15.2742H12.4147C11.0812 15.2742 9.84385 14.4872 9.84385 12.6202V12.4628C9.84385 10.8057 10.9019 9.73891 12.4847 9.73891H12.524C14.0587 9.73891 15.0075 10.7883 15.0075 12.065V12.183C15.0075 13.158 14.6839 13.5734 14.3691 13.5734C14.1374 13.5734 13.9582 13.4247 13.9582 13.1537V10.9631H13.0531V11.5315H13.0225C12.9394 11.2342 12.6552 10.9019 12.0693 10.9019C11.2911 10.9019 10.8101 11.4572 10.8101 12.3011V12.8301C10.8101 13.722 11.2998 14.2642 12.0693 14.2642C12.5415 14.2642 12.9656 14.0369 13.0837 13.6215H13.1274C13.2455 14.0412 13.7439 14.2686 14.2467 14.2686ZM11.7939 12.6814V12.4541C11.7939 11.9076 12.0212 11.6627 12.3666 11.6627C12.664 11.6627 12.9394 11.8551 12.9394 12.371V12.7383C12.9394 13.3111 12.6858 13.4816 12.3754 13.4816C12.0212 13.4816 11.7939 13.2673 11.7939 12.6814Z"
+                                            fill="#6D6D6D"></path>
+                                    </svg>
+                                </div>
+                                <div class="offcanvas-contact-text">
+                                    <a href="#homecontact">Send a project brief</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas-overlay"></div>
+    <div class="offcanvas-overlay-white"></div>
+    <!-- Offcanvas area start -->
+
+    <!-- Body main wrapper start -->
+    <main>
+  <section id="home" class="rs-banner-area rs-banner-two p-relative">
+    <div class="rs-banner-bg-thumb barakat-hero" data-background="assets/images/barakat/branding/hero.png"></div>
+    <div class="container"><div class="row"><div class="col-xxl-9 col-xl-10 col-lg-10">
+      <div class="rs-banner-wrapper"><div class="rs-banner-content">
+        <h1 class="rs-banner-title wow fadeInUp" data-wow-delay=".3s">Building With Purpose. Delivering With Precision.</h1>
+        <div class="rs-banner-descrip wow fadeInUp" data-wow-delay=".5s"><p>Barakat Arabia brings general contracting, construction, and coordinated MEP expertise together to move demanding projects from concept to completion.</p></div>
+        <div class="rs-banner-btn wow fadeInUp" data-wow-delay=".7s"><a class="rs-btn has-theme-red has-icon" href="#homecontact">Discuss Your Project <span class="icon-box"><i class="ri-arrow-right-line icon-first"></i><i class="ri-arrow-right-line icon-second"></i></span></a></div>
+      </div></div>
+    </div></div></div>
+  </section>
+
+  <div class="rs-text-slide-area rs-text-slide-one"><div class="container-fluid"><div class="rs-text-slide-wrapper"><div class="gsap-marquee right speed-20 move-to-1000"><div class="rs-text-slide-inner">
+    <div class="rs-text-slide-item"><h2 class="rs-text-slide-title">General Contracting</h2></div>
+    <div class="rs-text-slide-item"><h2 class="rs-text-slide-title">Construction Solutions</h2></div>
+    <div class="rs-text-slide-item"><h2 class="rs-text-slide-title">MEP Coordination</h2></div>
+    <div class="rs-text-slide-item"><h2 class="rs-text-slide-title">Infrastructure Works</h2></div>
+    <div class="rs-text-slide-item"><h2 class="rs-text-slide-title">Project Delivery</h2></div>
+    <div class="rs-text-slide-item"><h2 class="rs-text-slide-title">General Contracting</h2></div>
+  </div></div></div></div></div>
+
+  <section id="homeabout" class="rs-about-area section-space rs-about-two barakat-about-bg">
+    <div class="container"><div class="row g-5 align-items-center">
+      <div class="col-xl-7"><div class="rs-about-content-wrapper"><div class="rs-section-title-wrapper">
+        <span class="rs-section-subtitle has-theme-red justify-content-start">About Barakat Arabia</span>
+        <h2 class="rs-section-title rs-split-text-enable split-in-fade">A practical partner for demanding construction projects</h2>
+        <p class="descrip">Barakat Arabia brings general contracting and construction together with the electromechanical expertise described in the Electrolink profile: supply, installation and maintenance of MEP systems, facility management, project management and technical design.</p>
+      </div>
+      <div class="row g-4 mt-20">
+        <div class="col-md-6"><div class="barakat-info-block"><h4>Our Mission</h4><p>To deliver high-quality solutions, reliable services and superior materials with professionalism and a clear commitment to customer satisfaction.</p></div></div>
+        <div class="col-md-6"><div class="barakat-info-block"><h4>Our Vision</h4><p>To be a leading, trusted choice for clients through innovation, excellence and lasting relationships.</p></div></div>
+        <div class="col-12"><div class="barakat-info-block"><h4>Our Values</h4><p>Leadership · Transparency · Integrity · Reliability · Innovation · Customer Satisfaction</p></div></div>
+        <div class="col-12"><div class="barakat-info-block"><h4>How We Work</h4><p>Clear responsibilities, coordinated technical teams, and practical decisions keep each stage moving toward a successful handover.</p><a class="rs-text-btn has-theme-red" href="#homecontact">Request Company Information</a></div></div>
+      </div></div></div>
+      <div class="col-xl-5"><div class="rs-about-thumb rs-image scroll_reveal reveal_left reveal-active"><img src="assets/images/barakat/projects/project-02.jpg" alt="Coordinated building services in a hospitality environment"></div></div>
+    </div></div>
+  </section>
+
+  <section id="homeservices" class="rs-services-area rs-services-two section-space primary-bg">
+    <div class="rs-services-bg-thumb barakat-blueprint-bg"></div>
+    <div class="container"><div class="row g-5 section-title-space"><div class="col-xl-8"><div class="rs-section-title-wrapper">
+      <span class="rs-section-subtitle has-theme-red justify-content-start">Our Services</span><h2 class="rs-section-title rs-split-text-enable split-in-fade">One team from pre-construction to handover</h2>
+    </div></div></div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6"><div class="rs-services-item barakat-service-card"><div class="rs-services-content"><span class="barakat-service-number">01</span><h5 class="rs-services-title">Procurement &amp; Equipment Selection</h5><p>Value review and development; value engineering; equipment selection; material submittals; procurement and inspection.</p></div></div></div>
+      <div class="col-lg-4 col-md-6"><div class="rs-services-item barakat-service-card"><div class="rs-services-content"><span class="barakat-service-number">02</span><h5 class="rs-services-title">Technical Design &amp; Drawings</h5><p>Engineering calculations; shop drawings, sections and details; schematic and combined services drawings (CSD); as-built record drawings and manuals.</p></div></div></div>
+      <div class="col-lg-4 col-md-6"><div class="rs-services-item barakat-service-card"><div class="rs-services-content"><span class="barakat-service-number">03</span><h5 class="rs-services-title">Execution &amp; Project Management</h5><p>Method statements; installation and project management; testing and commissioning; operation and maintenance.</p></div></div></div>
+      <div class="col-lg-6 col-md-6"><div class="rs-services-item barakat-service-card"><div class="rs-services-content"><span class="barakat-service-number">04</span><h5 class="rs-services-title">Value Engineering</h5><p>Optimized design solutions; cost control and budget planning; lifecycle cost analysis; constructability and design assessment.</p></div></div></div>
+      <div class="col-lg-6 col-md-6"><div class="rs-services-item barakat-service-card"><div class="rs-services-content"><span class="barakat-service-number">05</span><h5 class="rs-services-title">Mechanical &amp; Electrical Infrastructure</h5><p>Coordinated infrastructure engineering, calculations, shop drawings, schematics, combined services drawings, as-built records and manuals.</p></div></div></div>
+    <div class="col-lg-6 col-md-6"><div class="rs-services-item barakat-service-card"><div class="rs-services-content"><span class="barakat-service-number">06</span><h5 class="rs-services-title">Facility Management &amp; Maintenance</h5><p>Supply, installation and maintenance of electromechanical systems, with facility management for MEP systems and ongoing operation and maintenance support.</p></div></div></div></div><p class="has-white mt-35 mb-0"><strong>Where we add value:</strong> Residential &bull; Commercial &bull; Hospitality &bull; Healthcare &bull; Industrial &bull; Infrastructure</p></div>
+  </section><section id="mep-scope" class="section-space profile-section primary-bg"><div class="container"><div class="rs-section-title-wrapper section-title-space"><span class="rs-section-subtitle has-theme-red justify-content-start">Scope of Work</span><h2 class="rs-section-title">Complete mechanical, electrical and plumbing systems</h2></div><p class="profile-lead">From core building services to connected controls and resilient power, our technical scope covers these twelve areas.</p><div class="row g-4"><div class="col-lg-4 col-md-6"><article class="profile-system"><span class="profile-number">01</span><h3>HVAC</h3><p>Heating, ventilation and air conditioning systems.</p></article></div><div class="col-lg-4 col-md-6"><article class="profile-system"><span class="profile-number">02</span><h3>Smart Metering</h3><p>Smart power and water metering systems.</p></article></div><div class="col-lg-4 col-md-6"><article class="profile-system"><span class="profile-number">03</span><h3>Solar Energy</h3><p>Solar energy solutions.</p></article></div><div class="col-lg-4 col-md-6"><article class="profile-system"><span class="profile-number">04</span><h3>Firefighting</h3><p>Firefighting systems.</p></article></div><div class="col-lg-4 col-md-6"><article class="profile-system"><span class="profile-number">05</span><h3>BMS &amp; IoT</h3><p>Building management systems and Internet of Things integration.</p></article></div><div class="col-lg-4 col-md-6"><article class="profile-system"><span class="profile-number">06</span><h3>Plumbing &amp; Drainage</h3><p>Plumbing and drainage systems.</p></article></div><div class="col-lg-4 col-md-6"><article class="profile-system"><span class="profile-number">07</span><h3>Electrical Power &amp; Lighting</h3><p>Electrical lighting and power distribution systems.</p></article></div><div class="col-lg-4 col-md-6"><article class="profile-system"><span class="profile-number">08</span><h3>Communications</h3><p>Communication systems.</p></article></div><div class="col-lg-4 col-md-6"><article class="profile-system"><span class="profile-number">09</span><h3>Automation</h3><p>Automation systems.</p></article></div><div class="col-lg-4 col-md-6"><article class="profile-system"><span class="profile-number">10</span><h3>Security &amp; Fire Alarm</h3><p>Security and fire alarm systems.</p></article></div><div class="col-lg-4 col-md-6"><article class="profile-system"><span class="profile-number">11</span><h3>Power Storage &amp; Backup</h3><p>UPS, battery systems, generators, automatic transfer switches (ATS) and synchronization panels.</p></article></div><div class="col-lg-4 col-md-6"><article class="profile-system"><span class="profile-number">12</span><h3>MEP Facility Management</h3><p>Facility management for mechanical, electrical and plumbing systems.</p></article></div></div></div></section>
+
+  <section id="homeportfolio" class="section-space profile-section profile-dark"><div class="container"><div class="rs-section-title-wrapper section-title-space"><span class="rs-section-subtitle has-theme-red justify-content-start">Project Portfolio</span><h2 class="rs-section-title">Projects documented in the Electrolink profile</h2></div><p class="profile-lead">A record of the old company’s MEP work across Saudi Arabia, Egypt and Kenya. Locations, scopes, completion years and values below are taken from the supplied profile. “In progress” reflects the profile’s status at publication, rather than a live project update.</p><div class="row g-4"><div class="col-xl-4 col-md-6"><article class="profile-project"><a class="popup-image" href="assets/images/barakat/projects/profile-01.jpg"><img src="assets/images/barakat/projects/profile-01.jpg" alt="MISK City Mobility Hub — image from the Electrolink profile" loading="lazy"></a><div class="profile-project-body"><span class="profile-number">01 / Saudi Arabia</span><h3>MISK City Mobility Hub</h3><dl><dt>Scope</dt><dd>MEP</dd><dt>Profile status</dt><dd>In progress in source profile</dd><dt>Reported value</dt><dd>Not stated in profile</dd></dl></div></article></div><div class="col-xl-4 col-md-6"><article class="profile-project"><a class="popup-image" href="assets/images/barakat/projects/profile-02.jpg"><img src="assets/images/barakat/projects/profile-02.jpg" alt="Hilton Garden Inn — image from the Electrolink profile" loading="lazy"></a><div class="profile-project-body"><span class="profile-number">02 / New Cairo, Egypt</span><h3>Hilton Garden Inn</h3><dl><dt>Scope</dt><dd>MEP</dd><dt>Profile status</dt><dd>In progress in source profile</dd><dt>Reported value</dt><dd>Not stated in profile</dd></dl></div></article></div><div class="col-xl-4 col-md-6"><article class="profile-project"><a class="popup-image" href="assets/images/barakat/projects/profile-03.jpg"><img src="assets/images/barakat/projects/profile-03.jpg" alt="Wilma Towers — image from the Electrolink profile" loading="lazy"></a><div class="profile-project-body"><span class="profile-number">03 / Nairobi, Kenya</span><h3>Wilma Towers</h3><dl><dt>Scope</dt><dd>MEP</dd><dt>Profile status</dt><dd>In progress in source profile</dd><dt>Reported value</dt><dd>Not stated in profile</dd></dl></div></article></div><div class="col-xl-4 col-md-6"><article class="profile-project"><a class="popup-image" href="assets/images/barakat/projects/profile-04.jpg"><img src="assets/images/barakat/projects/profile-04.jpg" alt="Grand Premiere Towers — image from the Electrolink profile" loading="lazy"></a><div class="profile-project-body"><span class="profile-number">04 / Nairobi, Kenya</span><h3>Grand Premiere Towers</h3><dl><dt>Scope</dt><dd>MEP</dd><dt>Profile status</dt><dd>In progress in source profile</dd><dt>Reported value</dt><dd>Not stated in profile</dd></dl><details class="profile-amenities"><summary>Development features in profile</summary><p>Solar water heaters, rooftop lounge deck, rooftop barbecue, fitted gym, video intercom, multiple balconies, high-speed lifts, 24-hour security, backup generator, borehole and electric fence.</p></details></div></article></div><div class="col-xl-4 col-md-6"><article class="profile-project"><a class="popup-image" href="assets/images/barakat/projects/profile-05.jpg"><img src="assets/images/barakat/projects/profile-05.jpg" alt="EPC – VCM — image from the Electrolink profile" loading="lazy"></a><div class="profile-project-body"><span class="profile-number">05 / Alexandria, Egypt</span><h3>EPC – VCM</h3><dl><dt>Scope</dt><dd>MEP</dd><dt>Completed</dt><dd>2022</dd><dt>Reported value</dt><dd>$5,000,000 USD</dd></dl></div></article></div><div class="col-xl-4 col-md-6"><article class="profile-project"><a class="popup-image" href="assets/images/barakat/projects/profile-06.jpg"><img src="assets/images/barakat/projects/profile-06.jpg" alt="JABCO Admin Building — image from the Electrolink profile" loading="lazy"></a><div class="profile-project-body"><span class="profile-number">06 / Cairo, Egypt</span><h3>JABCO Admin Building</h3><dl><dt>Scope</dt><dd>MEP</dd><dt>Completed</dt><dd>2021</dd><dt>Reported value</dt><dd>$4,000,000 USD</dd></dl></div></article></div><div class="col-xl-4 col-md-6"><article class="profile-project"><a class="popup-image" href="assets/images/barakat/projects/profile-07.jpg"><img src="assets/images/barakat/projects/profile-07.jpg" alt="Cairo Capital Center — image from the Electrolink profile" loading="lazy"></a><div class="profile-project-body"><span class="profile-number">07 / New Cairo, Egypt</span><h3>Cairo Capital Center</h3><dl><dt>Scope</dt><dd>HVAC, PM and firefighting</dd><dt>Completed</dt><dd>2021</dd><dt>Reported value</dt><dd>$1,500,000 USD</dd></dl></div></article></div><div class="col-xl-4 col-md-6"><article class="profile-project"><a class="popup-image" href="assets/images/barakat/projects/profile-08.jpg"><img src="assets/images/barakat/projects/profile-08.jpg" alt="Tiba Pharma — image from the Electrolink profile" loading="lazy"></a><div class="profile-project-body"><span class="profile-number">08 / Cairo, Egypt</span><h3>Tiba Pharma</h3><dl><dt>Scope</dt><dd>HVAC, BMS systems and firefighting</dd><dt>Completed</dt><dd>2014</dd><dt>Reported value</dt><dd>$1,500,000 USD</dd></dl></div></article></div><div class="col-xl-4 col-md-6"><article class="profile-project"><a class="popup-image" href="assets/images/barakat/projects/profile-09.jpg"><img src="assets/images/barakat/projects/profile-09.jpg" alt="GE Admin Building – Mivida — image from the Electrolink profile" loading="lazy"></a><div class="profile-project-body"><span class="profile-number">09 / New Cairo, Egypt</span><h3>GE Admin Building – Mivida</h3><dl><dt>Scope</dt><dd>HVAC, plumbing and firefighting</dd><dt>Completed</dt><dd>2016</dd><dt>Reported value</dt><dd>$1,500,000 USD</dd></dl></div></article></div><div class="col-xl-4 col-md-6"><article class="profile-project"><a class="popup-image" href="assets/images/barakat/projects/profile-10.jpg"><img src="assets/images/barakat/projects/profile-10.jpg" alt="Badr Pharma — image from the Electrolink profile" loading="lazy"></a><div class="profile-project-body"><span class="profile-number">10 / Cairo, Egypt</span><h3>Badr Pharma</h3><dl><dt>Scope</dt><dd>Power, light current, HVAC and firefighting</dd><dt>Completed</dt><dd>2014</dd><dt>Reported value</dt><dd>$1,600,000 USD</dd></dl></div></article></div><div class="col-xl-4 col-md-6"><article class="profile-project"><a class="popup-image" href="assets/images/barakat/projects/profile-11.jpg"><img src="assets/images/barakat/projects/profile-11.jpg" alt="Nile-66 Admin Building — image from the Electrolink profile" loading="lazy"></a><div class="profile-project-body"><span class="profile-number">11 / New Cairo, Egypt</span><h3>Nile-66 Admin Building</h3><dl><dt>Scope</dt><dd>HVAC and BMS</dd><dt>Completed</dt><dd>2014</dd><dt>Reported value</dt><dd>$1,000,000 USD</dd></dl></div></article></div><div class="col-xl-4 col-md-6"><article class="profile-project"><a class="popup-image" href="assets/images/barakat/projects/profile-12.jpg"><img src="assets/images/barakat/projects/profile-12.jpg" alt="EPC – Chairman Building — image from the Electrolink profile" loading="lazy"></a><div class="profile-project-body"><span class="profile-number">12 / Alexandria, Egypt</span><h3>EPC – Chairman Building</h3><dl><dt>Scope</dt><dd>HVAC, firefighting and fire alarm</dd><dt>Completed</dt><dd>2021</dd><dt>Reported value</dt><dd>$400,000 USD</dd></dl></div></article></div><div class="col-xl-4 col-md-6"><article class="profile-project"><a class="popup-image" href="assets/images/barakat/projects/profile-13.jpg"><img src="assets/images/barakat/projects/profile-13.jpg" alt="Elsewedy Office Building — image from the Electrolink profile" loading="lazy"></a><div class="profile-project-body"><span class="profile-number">13 / 5th Settlement, Egypt</span><h3>Elsewedy Office Building</h3><dl><dt>Scope</dt><dd>HVAC and BMS systems</dd><dt>Completed</dt><dd>2009</dd><dt>Reported value</dt><dd>$1,300,000 USD</dd></dl></div></article></div><div class="col-xl-4 col-md-6"><article class="profile-project"><a class="popup-image" href="assets/images/barakat/projects/profile-14.jpg"><img src="assets/images/barakat/projects/profile-14.jpg" alt="Town Way Mall — image from the Electrolink profile" loading="lazy"></a><div class="profile-project-body"><span class="profile-number">14 / Badr City, Egypt</span><h3>Town Way Mall</h3><dl><dt>Scope</dt><dd>Electromechanical systems</dd><dt>Completed</dt><dd>2022</dd><dt>Reported value</dt><dd>$450,000 USD</dd></dl></div></article></div><div class="col-xl-4 col-md-6"><article class="profile-project"><a class="popup-image" href="assets/images/barakat/projects/profile-15.jpg"><img src="assets/images/barakat/projects/profile-15.jpg" alt="P&amp;G — image from the Electrolink profile" loading="lazy"></a><div class="profile-project-body"><span class="profile-number">15 / 6th of October, Egypt</span><h3>P&amp;G</h3><dl><dt>Scope</dt><dd>HVAC system</dd><dt>Completed</dt><dd>2006</dd><dt>Reported value</dt><dd>$350,000 USD</dd></dl></div></article></div></div><p class="profile-note">Cairo Capital Center’s scope uses the abbreviation “PM” in the source. Values are reproduced as reported; the profile does not define their valuation basis.</p></div></section>
+
+  <section id="project-references" class="section-space profile-section "><div class="container"><div class="rs-section-title-wrapper section-title-space"><span class="rs-section-subtitle has-theme-red justify-content-start">Experience Across Sectors</span><h2 class="rs-section-title">The full project and consultant reference directory</h2></div><p class="profile-lead">References listed in the Electrolink profile, grouped by sector. Entries may also appear in the detailed portfolio or more than one category.</p><div class="profile-directory"><details><summary>Commercial projects <span>20 references</span></summary><ul><li>El-Sewedy HQ – New Cairo</li><li>Elsewedy Cables – El-Ain El-Sokhna</li><li>Elsewedy Transformer – 10th of Ramadan</li><li>Tiba Pharma Admin Building</li><li>Badr Pharma Admin Building</li><li>New Giza Admin Building – Zamalek</li><li>Nile-9G Admin Building</li><li>Nile-12G Admin Building</li><li>Nile-14G Admin Building</li><li>Nile-66 Admin Building – New Cairo</li><li>Nile-75 Admin Building – New Cairo</li><li>Nile-76 Admin Building – New Cairo</li><li>Japco-1 Admin Building</li><li>Japco-2 Admin Building</li><li>Chairman Building</li><li>Mega Mall – New Cairo</li><li>Hyundai Regional Office – New Cairo</li><li>GE Regional Office – New Cairo</li><li>Chrysler Egypt</li><li>NileSat – 6th of October</li></ul></details><details><summary>Pharmaceutical industries &amp; hospitals <span>10 references</span></summary><ul><li>Badr Pharma Factory</li><li>Tiba Pharma Factory</li><li>Dar El-Teb Hospital</li><li>VACSERA – Dokki</li><li>El-Nakhil Hospital</li><li>10th of Ramadan Hospital</li><li>Utopia Pharma</li><li>Pi-Park Pharmaceutical Warehouse</li><li>Pertussis and Diphtheria Vaccine Factory #1</li><li>Pertussis and Diphtheria Vaccine Factory #2</li></ul></details><details><summary>Industrial projects <span>9 references</span></summary><ul><li>Procter &amp; Gamble Egypt – 6th of October</li><li>Flex for Electric Products</li><li>Al Temsah Steel Factory</li><li>General Motors – 6th of October City</li><li>Elsewedy Transformer – 10th of Ramadan</li><li>Elsewedy Cables – El-Ain El-Sokhna</li><li>El-Katammya Bakery</li><li>VCM</li><li>KVC Station</li></ul></details><details><summary>Hotels &amp; resorts <span>15 references</span></summary><ul><li>Ras Al Helal Resort – Libya</li><li>Casino Sheraton Hotel</li><li>Savoy – Sharm El Sheikh</li><li>Marriott – Sharm El Sheikh</li><li>Ghazala Garden – Sharm El Sheikh</li><li>Merit Village – Hurghada</li><li>La Rosa Village – Hurghada</li><li>Fantasia Hotel – Sharm El Sheikh</li><li>Gardenia Village – Hurghada</li><li>Cilia Village – Hurghada</li><li>La Gouna Beach – El Sokhna</li><li>Soma Bay Mall</li><li>Hilton Garden Inn – New Cairo</li><li>Sindbad Mall</li><li>Pyramisa</li></ul></details><details><summary>Technical design <span>5 references</span></summary><ul><li>Soma Bay</li><li>Cairo Capital Center</li><li>Petromaint</li><li>Nile Museum</li><li>Irrigation Building</li></ul></details><details><summary>Residential projects <span>9 references</span></summary><ul><li>Mr. Baher Ghabbour Palace – Mirage City</li><li>Mr. Baher Ghabbour Palace – New Cairo</li><li>Mr. Ahmed AbdEl-Rahman Villa – 5th Settlement</li><li>Mr. Ahmed AbdEl-Rahman Villa – New Cairo</li><li>Mr. Mostafa El-Shaikh Villa – El-Obour</li><li>Dr. Hussien El-Shafai Villa – 1st Settlement</li><li>Dr. Hussien El-Shafei Villa – New Cairo</li><li>Wilma Residential Towers – Nairobi</li><li>Grand Premier Residential Towers – Nairobi</li></ul></details><details><summary>Banks <span>8 references</span></summary><ul><li>National Bank of Egypt – Menouf</li><li>National Bank of Egypt – Zefta</li><li>National Bank of Egypt – Tokh</li><li>National Bank of Egypt – Suez</li><li>CIB – Tanta</li><li>Al-Watani Bank – Sharm El Sheikh</li><li>Bloom Bank – Sharm El Sheikh</li><li>Suez Canal Bank – Giza</li></ul></details><details><summary>Consultant references <span>17 references</span></summary><ul><li>Shaker Consultancy Group (SCG)</li><li>Sabbour</li><li>Crown Home</li><li>Concord</li><li>Al-Baron Sabry El-Iraky</li><li>Bakry Consulting Engineers (Hassan Bakry)</li><li>Eng. Khaled Fateen</li><li>(MED) Abd El-Hamid Bakry</li><li>Dar Al-Me’mar</li><li>Al-Bonian</li><li>Delta Egypt</li><li>Segma</li><li>EMDEG (Magdi Kamei)</li><li>Mahfouz Consultants</li><li>EMG</li><li>BHC</li><li>Pro Map</li></ul></details><details><summary>Other facilities <span>12 references</span></summary><ul><li>Olympic Swimming Pool – 6th of October Club</li><li>Egyptian Diplomatic Club – Talat Harb, Downtown</li><li>Cook Door Restaurant – 6th of October, Tanta and Al-Rehab</li><li>Carpaccio Café – Maadi</li><li>Renault Showroom – 6th of October</li><li>Renault Showroom – Sheikh Zayed</li><li>Soudi Market – 10 branches</li><li>German School – Mivida</li><li>Al-Shahidin Mosque – Quesna</li><li>Suez Security Directorate – Police Officers Club</li><li>PVC Lab</li><li>MBS Charity City – D8, Riyadh, KSA</li></ul></details></div></div></section><section id="organization" class="section-space profile-section primary-bg"><div class="container"><div class="rs-section-title-wrapper section-title-space"><span class="rs-section-subtitle has-theme-red justify-content-start">Organization & Delivery</span><h2 class="rs-section-title">Technical teams supported from office to site</h2></div><p class="profile-lead">The Electrolink organization chart documents the following leadership, support and site delivery roles.</p><div class="row g-4"><div class="col-md-6"><article class="barakat-info-block"><h3>Leadership & Business Support</h3><p>Chairman and General Manager; finance department with senior accountant and accountant; purchase department and purchase officer; IT, HR and administration with HR Manager / PRO, HR Assistant, IT Incharge and office staff.</p></article></div><div class="col-md-6"><article class="barakat-info-block"><h3>MEP Engineering & Coordination</h3><p>MEP department, Project Manager, Senior Project Engineer, Project Engineer, Site MEP Coordinator, Mechanical Engineer and Electrical Engineer, supported by drafting teams.</p></article></div><div class="col-md-6"><article class="barakat-info-block"><h3>Site Delivery Teams</h3><p>Plumbing, HVAC and electrical supervisors and foremen; plumbers and pipe fitters, duct workers, electricians and their helpers.</p></article></div><div class="col-md-6"><article class="barakat-info-block"><h3>Fire Water Tank Department</h3><p>A dedicated fire water tank department with supervisor, draftsman, fitters and helpers.</p></article></div></div></div></section><section id="homegallery" class="section-space barakat-gallery-section"><div class="container">
+    <div class="row g-5 section-title-space"><div class="col-xl-8"><div class="rs-section-title-wrapper"><span class="rs-section-subtitle has-theme-red justify-content-start">Inside the Work</span><h2 class="rs-section-title rs-split-text-enable split-in-fade">Worksites, systems, and spaces</h2><p class="descrip">A closer look at the environments behind coordinated construction and technical delivery.</p></div></div></div>
+    <div class="row g-3"><div class="col-6 col-lg-3"><a class="popup-image barakat-gallery-item" href="assets/images/barakat/gallery/gallery-01.png"><img src="assets/images/barakat/gallery/gallery-01.png" alt="Construction environment reference 1"></a></div>
+<div class="col-6 col-lg-3"><a class="popup-image barakat-gallery-item" href="assets/images/barakat/gallery/gallery-02.png"><img src="assets/images/barakat/gallery/gallery-02.png" alt="Construction environment reference 2"></a></div>
+<div class="col-6 col-lg-3"><a class="popup-image barakat-gallery-item" href="assets/images/barakat/gallery/gallery-03.png"><img src="assets/images/barakat/gallery/gallery-03.png" alt="Construction environment reference 3"></a></div>
+<div class="col-6 col-lg-3"><a class="popup-image barakat-gallery-item" href="assets/images/barakat/gallery/gallery-04.jpg"><img src="assets/images/barakat/gallery/gallery-04.jpg" alt="Construction environment reference 4"></a></div>
+<div class="col-6 col-lg-3"><a class="popup-image barakat-gallery-item" href="assets/images/barakat/gallery/gallery-05.png"><img src="assets/images/barakat/gallery/gallery-05.png" alt="Construction environment reference 5"></a></div>
+<div class="col-6 col-lg-3"><a class="popup-image barakat-gallery-item" href="assets/images/barakat/gallery/gallery-06.png"><img src="assets/images/barakat/gallery/gallery-06.png" alt="Construction environment reference 6"></a></div>
+<div class="col-6 col-lg-3"><a class="popup-image barakat-gallery-item" href="assets/images/barakat/gallery/gallery-07.png"><img src="assets/images/barakat/gallery/gallery-07.png" alt="Construction environment reference 7"></a></div>
+<div class="col-6 col-lg-3"><a class="popup-image barakat-gallery-item" href="assets/images/barakat/gallery/gallery-08.png"><img src="assets/images/barakat/gallery/gallery-08.png" alt="Construction environment reference 8"></a></div>
+<div class="col-6 col-lg-3"><a class="popup-image barakat-gallery-item" href="assets/images/barakat/gallery/gallery-09.jpg"><img src="assets/images/barakat/gallery/gallery-09.jpg" alt="Construction environment reference 9"></a></div>
+<div class="col-6 col-lg-3"><a class="popup-image barakat-gallery-item" href="assets/images/barakat/gallery/gallery-10.png"><img src="assets/images/barakat/gallery/gallery-10.png" alt="Construction environment reference 10"></a></div>
+<div class="col-6 col-lg-3"><a class="popup-image barakat-gallery-item" href="assets/images/barakat/gallery/gallery-11.png"><img src="assets/images/barakat/gallery/gallery-11.png" alt="Construction environment reference 11"></a></div>
+<div class="col-6 col-lg-3"><a class="popup-image barakat-gallery-item" href="assets/images/barakat/gallery/gallery-12.png"><img src="assets/images/barakat/gallery/gallery-12.png" alt="Construction environment reference 12"></a></div></div>
+  </div></section>
+
+  <section id="quality" class="section-space primary-bg barakat-quality-section"><div class="container">
+    <div class="row g-5 section-title-space"><div class="col-xl-8"><div class="rs-section-title-wrapper"><span class="rs-section-subtitle has-theme-red justify-content-start">Standards &amp; References</span><h2 class="rs-section-title rs-split-text-enable split-in-fade">Quality considered at every stage</h2><p class="descrip">Our technical approach is guided by recognized industry references, documented inspections, and clear acceptance criteria. The logos below identify industry references; they do not represent a claim of company certification.</p></div></div></div>
+    <div class="row g-4"><div class="col-6 col-md-3"><div class="barakat-quality-item"><img src="assets/images/barakat/quality/quality-01.png" alt="ISO quality standard"><h5>ISO</h5></div></div>
+<div class="col-6 col-md-3"><div class="barakat-quality-item"><img src="assets/images/barakat/quality/quality-02.png" alt="SMACNA industry reference"><h5>SMACNA</h5></div></div>
+<div class="col-6 col-md-3"><div class="barakat-quality-item"><img src="assets/images/barakat/quality/quality-03.png" alt="IEC quality standard"><h5>IEC</h5></div></div>
+<div class="col-6 col-md-3"><div class="barakat-quality-item"><img src="assets/images/barakat/quality/quality-04.png" alt="ASTM quality standard"><h5>ASTM</h5></div></div>
+<div class="col-6 col-md-3"><div class="barakat-quality-item"><img src="assets/images/barakat/quality/quality-05.png" alt="ASME quality standard"><h5>ASME</h5></div></div>
+<div class="col-6 col-md-3"><div class="barakat-quality-item"><img src="assets/images/barakat/quality/quality-06.png" alt="NFPA quality standard"><h5>NFPA</h5></div></div>
+<div class="col-6 col-md-3"><div class="barakat-quality-item"><img src="assets/images/barakat/quality/quality-07.png" alt="Ashrae quality standard"><h5>Ashrae</h5></div></div>
+<div class="col-6 col-md-3"><div class="barakat-quality-item"><img src="assets/images/barakat/quality/quality-08.png" alt="SASO quality standard"><h5>SASO</h5></div></div></div>
+  </div></section>
+
+  <section class="rs-brand-area section-space rs-brand-two barakat-sectors-bg"><div class="container"><div class="row g-5 section-title-space"><div class="col-12"><div class="rs-brand-wrapper"><div class="rs-section-title-wrapper">
+    <span class="rs-section-subtitle has-theme-red justify-content-start">Sectors We Serve</span><h2 class="rs-section-title rs-split-text-enable split-in-fade mb-20">Built around the needs of each environment</h2>
+    <p class="descrip">Every sector brings different operational, safety, and coordination priorities. Our delivery approach adapts to the space, its users, and the way it must perform.</p>
+  </div><div class="row g-4">
+    <div class="col-xl-6 col-md-6"><div class="barakat-info-block"><h4>Commercial</h4><p>Efficient, adaptable workplaces planned for comfort and everyday operation.</p></div></div>
+    <div class="col-xl-6 col-md-6"><div class="barakat-info-block"><h4>Hospitality</h4><p>Guest-focused environments where comfort, discretion, and continuity matter.</p></div></div>
+    <div class="col-xl-6 col-md-6"><div class="barakat-info-block"><h4>Healthcare</h4><p>Careful coordination for sensitive spaces with demanding technical requirements.</p></div></div>
+    <div class="col-xl-6 col-md-6"><div class="barakat-info-block"><h4>Residential</h4><p>Reliable building services that support comfortable, practical daily living.</p></div></div>
+    <div class="col-xl-6 col-md-6"><div class="barakat-info-block"><h4>Industrial</h4><p>Robust systems designed around production, maintenance, and operational resilience.</p></div></div>
+    <div class="col-xl-6 col-md-6"><div class="barakat-info-block"><h4>Infrastructure</h4><p>Coordinated networks and utilities that support long-term performance at scale.</p></div></div>
+  </div></div></div></div></div></section>
+
+  <section class="barakat-sponsors section-space">
+    <div class="container"><div class="row section-title-space"><div class="col-xl-8"><div class="rs-section-title-wrapper">
+      <span class="rs-section-subtitle has-theme-red justify-content-start">Sponsors &amp; Partners</span>
+      <h2 class="rs-section-title has-white">Featured clients &amp; partners from the profile</h2>
+      <p class="barakat-sponsors-lead">Featured client and partner logos reproduced from the Electrolink company profile.</p>
+    </div></div></div></div>
+    <div class="barakat-sponsors-viewport" role="group" aria-label="Sponsors and partners">
+      <div class="barakat-marquee-row">
+        <div class="barakat-marquee-track"><div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/gardenia-plaza.png" alt="Gardenia Plaza Hotel and Resort" loading="lazy"></div>
+          <div class="barakat-sponsor-logo is-light-logo"><img src="assets/images/barakat/sponsors/sponsor-01.png" alt="MBS City" loading="lazy"></div>
+          <div class="barakat-sponsor-logo is-light-logo"><img src="assets/images/barakat/sponsors/sponsor-02.png" alt="Hilton Garden Inn" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-03.png" alt="Wilma Towers" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-04.png" alt="Al Ahly Bank" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-05.png" alt="Etisalat" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-06.png" alt="Elsewedy Electric" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-07.png" alt="Seoudi" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-08.png" alt="Hyundai" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-09.png" alt="P\&amp;G" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-10.png" alt="VAAL" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-11.webp" alt="U.S. Embassy" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-12.png" alt="Hilton" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-13.png" alt="Mivida" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-14.png" alt="Savoy Group" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-15.png" alt="EPC Petro" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-16.webp" alt="Emaar" loading="lazy"></div>
+          <div class="barakat-sponsor-logo is-light-logo"><img src="assets/images/barakat/sponsors/sponsor-17.png" alt="Nile Engineering" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-18.png" alt="APM Petromaint" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-19.png" alt="ADWAA" loading="lazy"></div>
+        </div>
+        <div class="barakat-marquee-track" aria-hidden="true"><div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/gardenia-plaza.png" alt="" loading="lazy"></div>
+          <div class="barakat-sponsor-logo is-light-logo"><img src="assets/images/barakat/sponsors/sponsor-01.png" alt="MBS City" loading="lazy"></div>
+          <div class="barakat-sponsor-logo is-light-logo"><img src="assets/images/barakat/sponsors/sponsor-02.png" alt="Hilton Garden Inn" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-03.png" alt="Wilma Towers" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-04.png" alt="Al Ahly Bank" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-05.png" alt="Etisalat" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-06.png" alt="Elsewedy Electric" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-07.png" alt="Seoudi" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-08.png" alt="Hyundai" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-09.png" alt="P\&amp;G" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-10.png" alt="VAAL" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-11.webp" alt="U.S. Embassy" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-12.png" alt="Hilton" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-13.png" alt="Mivida" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-14.png" alt="Savoy Group" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-15.png" alt="EPC Petro" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-16.webp" alt="Emaar" loading="lazy"></div>
+          <div class="barakat-sponsor-logo is-light-logo"><img src="assets/images/barakat/sponsors/sponsor-17.png" alt="Nile Engineering" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-18.png" alt="APM Petromaint" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-19.png" alt="ADWAA" loading="lazy"></div>
+        </div>
+      </div>
+      <div class="barakat-marquee-row is-reverse">
+        <div class="barakat-marquee-track"><div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/gardenia-plaza.png" alt="Gardenia Plaza Hotel and Resort" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-11.webp" alt="U.S. Embassy" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-12.png" alt="Hilton" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-13.png" alt="Mivida" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-14.png" alt="Savoy Group" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-15.png" alt="EPC Petro" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-16.webp" alt="Emaar" loading="lazy"></div>
+          <div class="barakat-sponsor-logo is-light-logo"><img src="assets/images/barakat/sponsors/sponsor-17.png" alt="Nile Engineering" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-18.png" alt="APM Petromaint" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-19.png" alt="ADWAA" loading="lazy"></div>
+          <div class="barakat-sponsor-logo is-light-logo"><img src="assets/images/barakat/sponsors/sponsor-01.png" alt="MBS City" loading="lazy"></div>
+          <div class="barakat-sponsor-logo is-light-logo"><img src="assets/images/barakat/sponsors/sponsor-02.png" alt="Hilton Garden Inn" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-03.png" alt="Wilma Towers" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-04.png" alt="Al Ahly Bank" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-05.png" alt="Etisalat" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-06.png" alt="Elsewedy Electric" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-07.png" alt="Seoudi" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-08.png" alt="Hyundai" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-09.png" alt="P\&amp;G" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-10.png" alt="VAAL" loading="lazy"></div>
+        </div>
+        <div class="barakat-marquee-track" aria-hidden="true"><div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/gardenia-plaza.png" alt="" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-11.webp" alt="U.S. Embassy" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-12.png" alt="Hilton" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-13.png" alt="Mivida" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-14.png" alt="Savoy Group" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-15.png" alt="EPC Petro" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-16.webp" alt="Emaar" loading="lazy"></div>
+          <div class="barakat-sponsor-logo is-light-logo"><img src="assets/images/barakat/sponsors/sponsor-17.png" alt="Nile Engineering" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-18.png" alt="APM Petromaint" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-19.png" alt="ADWAA" loading="lazy"></div>
+          <div class="barakat-sponsor-logo is-light-logo"><img src="assets/images/barakat/sponsors/sponsor-01.png" alt="MBS City" loading="lazy"></div>
+          <div class="barakat-sponsor-logo is-light-logo"><img src="assets/images/barakat/sponsors/sponsor-02.png" alt="Hilton Garden Inn" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-03.png" alt="Wilma Towers" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-04.png" alt="Al Ahly Bank" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-05.png" alt="Etisalat" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-06.png" alt="Elsewedy Electric" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-07.png" alt="Seoudi" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-08.png" alt="Hyundai" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-09.png" alt="P\&amp;G" loading="lazy"></div>
+          <div class="barakat-sponsor-logo"><img src="assets/images/barakat/sponsors/sponsor-10.png" alt="VAAL" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="homecontact" class="rs-work-process-area section-space rs-work-step-two"><div class="container"><div class="row g-5 align-items-start">
+    <div class="col-xl-6"><div class="rs-work-process-content-wrapper"><div class="rs-section-title-wrapper"><span class="rs-section-subtitle has-theme-red justify-content-start">Let's Build What's Next</span><h2 class="rs-section-title rs-split-text-enable split-in-fade">Bring your next project into focus</h2><p class="descrip">Share your scope, priorities, and timeline. Our team will review the requirements and help define a practical route from planning to delivery.</p></div>
+      <div class="profile-source-contact"><h3>Electrolink Profile Contacts</h3><p>Contact details recorded in the old company profile.</p><ul><li><a href="tel:+966557675438">+966 55 767 5438</a></li><li><a href="tel:+966539875844">+966 53 987 5844</a></li><li><a href="mailto:info@electro-link.com">info@electro-link.com</a></li><li><a href="https://www.electro-link.com" target="_blank" rel="noopener noreferrer">www.electro-link.com</a></li></ul></div><div class="barakat-contact-list"><p><strong>Early Review</strong><br>Align technical requirements before they become site constraints.</p><p><strong>Clear Coordination</strong><br>Keep commercial, programme, and engineering decisions connected.</p><p><strong>Responsive Delivery</strong><br>Maintain practical communication from first discussion through handover.</p></div>
+    </div></div>
+    <div class="col-xl-6"><div class="rs-contact-form rs-contact-one has-theme-red"><div class="rs-contact-bg-thumb" data-background="assets/images/barakat/gallery/gallery-04.jpg"></div><h3 class="rs-contact-form-title mb-10">Start a Conversation</h3><p class="descrip">Tell us what you are planning and what the project needs to achieve.</p>
+      <form id="contact-form" action="assets/mailer.php" method="POST"><div class="row g-4"><div class="col-md-6"><div class="rs-contact-input"><input name="name" type="text" aria-label="Full Name" placeholder="Full Name" required></div></div><div class="col-md-6"><div class="rs-contact-input"><input name="email" type="email" aria-label="Email" placeholder="Email" required></div></div><div class="col-12"><div class="rs-contact-input"><input name="phone" type="tel" aria-label="Phone" placeholder="Phone"></div></div><div class="col-12"><div class="rs-contact-input"><textarea name="message" aria-label="Message" placeholder="Message" required></textarea></div></div><div class="col-12"><div class="rs-contact-btn"><button type="submit" class="rs-btn has-theme-red">Send Message</button></div></div></div></form><p class="ajax-response" role="status" aria-live="polite"></p>
+    </div></div>
+  </div></div></section>
+</main>
+    <!-- Body main wrapper end -->
+
+    <!-- footer area start -->
+<footer><div class="rs-footer-area rs-footer-two"><div class="rs-footer-bg-thumb" data-background="assets/images/barakat/branding/hero.png"></div><div class="rs-footer-top"><div class="container"><div class="row g-5">
+  <div class="col-lg-4 col-md-6"><div class="rs-footer-widget"><img class="barakat-footer-logo" src="assets/images/barakat/branding/barakat-logo-dark.png" alt="Barakat Arabia"><p class="rs-footer-widget-description mt-25">Barakat Arabia combines contracting discipline with coordinated technical delivery for construction and MEP-led projects.</p><h3 class="rs-footer-stroke-text has-theme-red">Built With Purpose</h3></div></div>
+  <div class="col-lg-2 col-md-6"><div class="rs-footer-widget"><h5 class="rs-footer-widget-title">Quick Links</h5><div class="rs-footer-widget-links has-theme-red"><ul><li><a href="#mep-scope">MEP Scope</a></li><li><a href="#project-references">Project References</a></li><li><a href="#organization">Organization</a></li><li><a href="#home">Home</a></li><li><a href="#homeabout">About</a></li><li><a href="#homeservices">Services</a></li><li><a href="#homeportfolio">Projects</a></li><li><a href="#homegallery">Gallery</a></li><li><a href="#homecontact">Contact</a></li></ul></div></div></div>
+  <div class="col-lg-3 col-md-6"><div class="rs-footer-widget"><h5 class="rs-footer-widget-title">Services</h5><div class="rs-footer-widget-links has-theme-red"><ul><li><a href="#homeservices">Pre-Construction</a></li><li><a href="#homeservices">Technical Design</a></li><li><a href="#homeservices">Site Execution</a></li><li><a href="#homeservices">Value Engineering</a></li><li><a href="#homeservices">MEP Systems</a></li></ul></div></div></div>
+  <div class="col-lg-3 col-md-6"><div class="rs-footer-widget"><h5 class="rs-footer-widget-title">Start a Project</h5><p class="rs-footer-widget-description">Share your brief with our team to begin a focused project discussion.</p><div class="rs-footer-widget-links has-theme-red mt-20"><ul><li><a href="#homecontact">Contact Barakat Arabia</a></li><li><a href="#homeabout">How We Work</a></li></ul></div></div></div>
+</div></div></div><div class="rs-footer-copyright-area rs-copyright-one"><div class="container"><div class="row justify-content-center"><div class="col-xl-12"><div class="rs-footer-copyright has-theme-red text-center"><p>&copy; <span id="year">2026</span> All rights reserved. Barakat Arabia General Contracting.</p></div></div></div></div></div></div></footer>
+    <!-- footer area end -->
+
+    <!-- Backtotop start -->
+    <div class="backtotop-wrap cursor-pointer has-theme-red">
+        <svg class="backtotop-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Backtotop end -->
+
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/plugins/waypoints.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins/meanmenu.min.js"></script>
+    <script src="assets/js/plugins/swiper.min.js"></script>
+    <script src="assets/js/plugins/wow.min.js"></script>
+    <script src="assets/js/vendor/magnific-popup.min.js"></script>
+    <script src="assets/js/vendor/isotope.pkgd.min.js"></script>
+    <script src="assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/plugins/nice-select.min.js"></script>
+    <script src="assets/js/plugins/jarallax.min.js"></script>
+    <script src="assets/js/vendor/ajax-form.js"></script>
+    <script src="assets/js/plugins/easypie.js"></script>
+    <script src="assets/js/plugins/headding-title.js"></script>
+    <script src="assets/js/plugins/lenis.min.js"></script>
+    <script src="assets/js/plugins/gsap.min.js"></script>
+    <script src="assets/js/plugins/rs-anim-int.js"></script>
+    <script src="assets/js/plugins/rs-scroll-trigger.min.js"></script>
+    <script src="assets/js/plugins/rs-splitText.min.js"></script>
+    <script src="assets/js/plugins/jquery.lettering.js"></script>
+    <script src="assets/js/plugins/parallax-effect.min.js"></script>
+    <script src="assets/js/plugins/jquery.appear.min.js"></script>
+    <script src="assets/js/plugins/marquee.min.js"></script>
+    <script src="assets/js/plugins/chart.umd.min.js"></script>
+    <script src="assets/js/plugins/nouislider.min.js"></script>
+    <script src="assets/js/vendor/purecounter.js"></script>
+    <script src="assets/js/vendor/odometer.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
