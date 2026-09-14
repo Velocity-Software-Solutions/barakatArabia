@@ -1,6 +1,8 @@
 (function ($) {
     "use strict";
     var windowOn = $(window);
+    var pageLanguage = document.documentElement.getAttribute('data-site-language');
+    var isArabic = pageLanguage === 'ar';
 
     /* Windows Load */
     $(window).on('load', function () {
@@ -47,7 +49,7 @@
     }
 
     /* Append settings HTML  */
-    rs_settings_append(true); /* if you want to enable dark mode, send "true" */
+    rs_settings_append(!pageLanguage); // Published language pages use their declared direction.
 
     /* Event listeners  */
     $(".rs-theme-settings-open-btn").on("click", function () {
@@ -59,11 +61,12 @@
         rs_rtl_settings();
     }
 
-    var rs_rtl = sessionStorage.getItem('rs_dir');
+    var rs_rtl = pageLanguage ? document.documentElement.dir : sessionStorage.getItem('rs_dir');
     let rtl_setting = rs_rtl === 'rtl' ? true : false;
 
     /* settings append in body Js */
     function rs_settings_append($x) {
+        if (!$x) return;
         var settings = $('body');
         /* no need switcher then add 'd-none' */
         var settings_html = `<div class="rs-theme-settings-area">
@@ -160,6 +163,15 @@ Sidebar Toggle
     });
 
     /* MagnificPopup image view */
+    if (isArabic) {
+        $.extend(true, $.magnificPopup.defaults, {
+            tClose: 'إغلاق (Esc)',
+            tLoading: 'جارٍ التحميل...',
+            gallery: { tPrev: 'الصورة السابقة', tNext: 'الصورة التالية', tCounter: '%curr% من %total%' },
+            image: { tError: 'تعذر تحميل الصورة.' },
+            ajax: { tError: 'تعذر تحميل المحتوى.' }
+        });
+    }
     $(".popup-image").magnificPopup({
         type: "image",
         gallery: {
@@ -332,6 +344,14 @@ Sidebar Toggle
             $swiper.closest('.rs-swiper').find('.swiper-pagination').addClass(rsPagination);
 
             var swiper = new Swiper(this, {
+                a11y: isArabic ? {
+                    prevSlideMessage: 'الشريحة السابقة',
+                    nextSlideMessage: 'الشريحة التالية',
+                    firstSlideMessage: 'هذه هي الشريحة الأولى',
+                    lastSlideMessage: 'هذه هي الشريحة الأخيرة',
+                    paginationBulletMessage: 'انتقل إلى الشريحة {{index}}',
+                    slideLabelMessage: '{{index}} من {{slidesLength}}'
+                } : {},
                 loop: loop,
                 autoplay: autoplay,  // data-autoplay="true" => Delay | .swiper-slide | data-swiper-autoplay="2000">
                 direction: direction,

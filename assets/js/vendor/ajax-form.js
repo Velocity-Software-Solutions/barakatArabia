@@ -5,6 +5,14 @@ $(function() {
 
 	// Get the messages div.
 	var formMessages = $('.ajax-response');
+	var isArabic = document.documentElement.lang === 'ar';
+	function localizedMessage(message, success) {
+		if (!isArabic) return message;
+		if (success) return 'شكراً لك! تم إرسال رسالتك.';
+		if (message.indexOf('not configured') !== -1) return 'خدمة البريد الإلكتروني غير مهيأة حالياً. يرجى المحاولة لاحقاً.';
+		if (message.indexOf('complete the form') !== -1) return 'يرجى استكمال النموذج والتحقق من البريد الإلكتروني ثم المحاولة مجدداً.';
+		return 'تعذر إرسال رسالتك. يرجى المحاولة مجدداً لاحقاً.';
+	}
 
 	// Set up an event listener for the contact form.
 	$(form).submit(function(e) {
@@ -26,7 +34,7 @@ $(function() {
 			$(formMessages).addClass('success');
 
 			// Set the message text.
-			$(formMessages).text(response);
+			$(formMessages).text(localizedMessage(response, true));
 
 			// Clear the form.
 			$('#contact-form input,#contact-form textarea').val('');
@@ -37,10 +45,10 @@ $(function() {
 			$(formMessages).addClass('error');
 
 			// Set the message text.
-			if (data.responseText !== '') {
-				$(formMessages).text(data.responseText);
+			if (data.responseText) {
+				$(formMessages).text(localizedMessage(data.responseText, false));
 			} else {
-				$(formMessages).text('Please complete the form and try again');
+				$(formMessages).text(localizedMessage('Please complete the form and try again', false));
 			}
 		});
 	});
